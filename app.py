@@ -1,3 +1,10 @@
+#Run the `app.py` is fully self-contained. It does everything the notebook does,
+#  just inside the Streamlit UI
+
+#- Loads `data/train.csv` and `data/test.csv` itself
+#- Cleans the data, builds the pipeline, trains the LogisticRegression 
+# model in-browser when the student clicks **"Train the model"**
+#- Predicts on `test.csv` and shows the `account #N → bot/human` lines
 import inspect
 from pathlib import Path
 
